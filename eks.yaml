@@ -9,8 +9,7 @@ metadata:
 
 managedNodeGroups:
 - name: spot       # Name of the node group
-  #instanceTypes: ["c3.large","c4.large","c5.large","c5d.large","c5n.large","c5a.large"]   # Allowed EC2 instance types for spot instances
+  instanceTypes: ["c3.large","c4.large","c5.large","c5d.large","c5n.large","c5a.large"]   # Allowed EC2 instance types for spot instances
   #instanceTypes: ["t3.medium", "t3.large", "c5.large", "c5d.large", "c5n.large", "c5a.large"]
-  instanceType: "t3.micro"
   spot: false           # Enables Spot instances
   desiredcapacity: 1   # Number of nodes desired initially
